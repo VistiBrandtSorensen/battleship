@@ -17,15 +17,15 @@
                 <td>
                     @if (Model.OpponentBoard[x, y] == battleship.Models.OpponentField.Unknown)
                     {
-                        <a href="@Url.RouteUrl("Shoot", new { playerId = Model.PlayerId, x = x, y = y})">Skyd</a>
+                        <a href="@Url.RouteUrl("Shoot", new { playerId = Model.PlayerId, x = x, y = y})"><img src="/images/grøn.png"/></a>
                     }
                     else if (Model.OpponentBoard[x, y] == battleship.Models.OpponentField.Miss)
                     {
-                        <span>*</span>
+                        <span><img src="/images/grøn.png"/></span>
                     }
                     else
                     {
-                        <b>X</b>
+                        <b><img scr"kryds.jpg"/></b>
                     }
                 </td>
             }
